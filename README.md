@@ -1,9 +1,9 @@
 # Rock, Paper, Scissor
 ## Overview
-This application employs the use of Python for both the game logic and the UI portion of Rock, Paper, Scissors. The solution is a repeatable, single round of the traditional rock, paper, scissors. The code is a bit sloppy and was slapped together in about an hour. It would be interesting to try to refactor it into a cleaner, possibly more object oriented solution. All in all, it works just fine and I may be a bit harsh in saying that it's only a step up from spaghetti code. Here's the breakdown:
+This application employs the use of Python for both the game logic and the UI portion of Rock, Paper, Scissors. The solution is a repeatable, single round of the traditional rock, paper, scissors. The code is a bit sloppy and was slapped together in about an hour. It would be interesting to try to refactor it into a cleaner, possibly more object oriented solution. All in all, it works just fine. Here's the breakdown:
 
 ## The Game Logic
-The game logic is simple. I split it into three parts - a comparison function, a selection function, and a refreshing function.
+The game logic is simple - split it into three parts - a comparison function, a selection function, and a refreshing function.
 
 ### The Comparison Function
 ```
@@ -19,7 +19,7 @@ def compare(user, bot):
     else:
         return -1
 ```
-I like to think this is pretty self explanatory. First, I check if the values of `user` and `bot` are equal (bad names, I know), implying the game is a draw. If not, I check if the user is the winner by `elif`-ing the three scenarios in which the user wins. Last, I lazily assume that the user has lost if I haven't returned by now. The function returns 0 for a draw, 1 for a user win, and -1 for a user loss.
+First, check if the values of `user` and `bot` are equal, implying the game is a draw. If not, check if the user is the winner by `elif`-ing the three scenarios in which the user wins. Lastly, assume that the user has lost if program hasn't returned by now. The function returns 0 for a draw, 1 for a user win, and -1 for a user loss.
 
 ### The Selection Function
 ```
@@ -59,7 +59,7 @@ A simple function that resets the state of the UI by enabling the previously dis
 Barf...
 
 ### Tkinter is Nice
-The author of this code is not. Nonetheless the solution is pretty simple. A few button widgets for selections, quitting the application, and refreshing the game. A text widget for the outcome of the game. And yeah... that's pretty much it. Some frame widgets were used for spacing and organization.
+The solution is pretty simple. A few button widgets for selections, quitting the application, and refreshing the game. A text widget for the outcome of the game. And yeah... that's pretty much it. Some frame widgets were used for spacing and organization.
 
 ### The UI Code
 ```
