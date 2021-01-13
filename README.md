@@ -97,4 +97,3 @@ padbottom = tk.Frame(root, height=50)
 padbottom.pack()
 bottom = tk.Frame(root)
 ```
-I leave thee with no explanation. No justifications. Attrocities are wretched, unjust, and often rooted in human selfishness. As Machiavelli said in the 16th century, humans are wretched creatures. I'm no exception.
