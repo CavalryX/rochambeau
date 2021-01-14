@@ -1,4 +1,4 @@
-# Rock, Paper, Scissor
+# Rock, Paper, Scissors
 ## Overview
 This application employs the use of Python for both the game logic and the UI portion of Rock, Paper, Scissors. The solution is a repeatable, single round of the traditional rock, paper, scissors. The code is a bit sloppy and was slapped together in about an hour. It would be interesting to try to refactor it into a cleaner, possibly more object oriented solution. All in all, it works just fine. Here's the breakdown:
 
